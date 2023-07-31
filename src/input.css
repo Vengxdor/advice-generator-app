@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+   font-family: 'Manrope';
+}
+
+
+.ar{
+    max-width: 10ch;
+}
+
+
+.neon:hover{
+    box-shadow: 
+            0 0  10px hsl(150, 100%, 66%),
+            0 0  30px hsl(150, 100%, 66%),
+            0 0  60px hsl(150, 100%, 66%);
+}
+
+.follow{
+    position: absolute;
+    width: 20vw;
+    aspect-ratio: 1;
+    background: linear-gradient(to right, hsl(150, 100%, 66%), purple);
+    border-radius: 50%;
+    inset: 0;
+    filter: blur(100px);
+    translate: -50% -50%;
+    opacity: .1;
+    z-index: -1;
+
+    animation: rotate 20s infinite;
+    pointer-events: none;
+}
+
+@keyframes rotate {
+    from{
+        rotate: 0deg;
+    }
+
+
+    to{
+        rotate:360deg;
+    }
+
+}
