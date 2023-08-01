@@ -649,6 +649,10 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.-bottom-5{
+  bottom: -1.25rem;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -823,6 +827,10 @@ video {
 
 .h-\[90vh\]{
   height: 90vh;
+}
+
+.h-56{
+  height: 14rem;
 }
 
 .w-11\/12{
